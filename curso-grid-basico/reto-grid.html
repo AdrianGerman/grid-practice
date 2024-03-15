@@ -1,0 +1,33 @@
+
+<div class="styles-main">
+    <div class="contenedor">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</div>
+<style>
+    .styles-main {
+        display: grid;
+        justify-items: center;
+    }
+
+    .contenedor {
+        border: 5px solid #07f30b;
+        background-color: #c5252500;
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(2, 100px);
+        gap: 20px;
+        grid-auto-flow: column;
+    }
+
+    .item {
+        border: 5px solid #039a0d;
+        font-size: 4rem;
+        background-color: #07f30b;
+    }
+</style>
